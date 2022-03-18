@@ -5,7 +5,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(#ff0043, #434343);
+    /*background: linear-gradient(#ff0043, #434343);*/
+}
+.corpo-login {
+    background-image: url(../Imagens/castelo-medieval.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.corpo-cadastro {
+    background-image: url(../Imagens/cavaleiro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .login-box {
     position: absolute;
@@ -200,4 +212,20 @@ body {
 }
 .alternative span::after {
     left: 50px;
+}
+.fa-eye {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+.esqueciSenha a {
+    position: relative;
+    text-align: center;
+    color: #ff0043;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 3px;
 }
