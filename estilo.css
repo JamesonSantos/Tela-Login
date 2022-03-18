@@ -150,8 +150,6 @@ body {
     }
 }
 
-
-
 .social-media {
     display: flex;
     align-content: center;
@@ -183,7 +181,6 @@ body {
 }
 .alternative {
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 .alternative span {
     font-size: 1.1rem;
@@ -203,11 +200,4 @@ body {
 }
 .alternative span::after {
     left: 50px;
-}
-.criar-conta h3 {
-    margin: 0 0 30px;
-    padding: 0;
-    margin-bottom: 12px;
-    color: #fff;
-    text-align: center;
 }
