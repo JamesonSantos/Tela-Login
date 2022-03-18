@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="Imagens/icone.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
+    <title>Redefinir Senha</title>
 </head>
 
-<body class="corpo-login">
+<body class="corpo-redefinir">
     <div class="login-box">
-        <h2>Login</h2>
+        <h2>Nova Senha</h2>
         <form>
             <div class="user-box">
                 <input type="text" name="usuario" required="">
@@ -21,45 +21,39 @@
             </div>
             <div class="user-box">
                 <input type="password" id="senha" name="senha" required="">
-                <label>Senha</label>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <label>Nova Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
             </div>
-            <a href="#">
+            <div class="user-box">
+                <input type="password" id="confirmeSenha" name="confirme-senha" required="">
+                <label>Confirmar Senha</label>
+                <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <a href="#"><center>
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                ENTRAR
+                REDEFINIR
             </a>
-            <div class="criar-conta">
-                <div class="alternative">
-                    <span>OU</span>
-                </div>
-                <a href="#">
-                    CRIAR CONTA
-                </a>
-                <div class="social-media">
-                    <a href="#">
-                        <img src="imagens/google.png" alt="Google">
-                    </a>
-                    <a href="#">
-                        <img src="imagens/facebook.png" alt="Facebook">
-                    </a>
-                    <a href="#">
-                        <img src="imagens/steam.png" alt="Linkedin">
-                    </a>
-                </div>
-            </div>
         </form>
-        <div class="esqueciSenha">
-            <a href=""><h6>Esqueci minha senha</h6></a>
-        </div>
     </div>
-    
     <script>
         let btn = document.querySelector('.fa-eye')
         btn.addEventListener('click', ()=>{
             let = inputSenha = document.querySelector ('#senha')
+
+            if(inputSenha.getAttribute('type') == 'password') {
+            inputSenha.setAttribute('type', 'text')
+            } else {
+                inputSenha.setAttribute('type', 'password')
+            }
+            })
+    </script>
+    <script>
+        let btnConfirme = document.querySelector('#verConfirmeSenha')
+        btnConfirme.addEventListener('click', ()=>{
+            let = inputSenha = document.querySelector ('#confirmeSenha')
 
             if(inputSenha.getAttribute('type') == 'password') {
             inputSenha.setAttribute('type', 'text')

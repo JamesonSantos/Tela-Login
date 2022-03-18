@@ -19,6 +19,12 @@ body {
     background-size: cover;
     background-position: center;
 }
+.corpo-redefinir {
+    background-image: url(../Imagens/cavaleiro-caido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .login-box {
     position: absolute;
     top: 50%;
