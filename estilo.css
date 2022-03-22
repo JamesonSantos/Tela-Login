@@ -235,3 +235,11 @@ body {
     margin-top: 10px;
     letter-spacing: 3px;
 }
+#logoGame {
+    display: block;
+    position: relative;
+    left: 1870px;
+    top: 110px;
+    width: 450px;
+    
+}
